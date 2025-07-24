@@ -17,8 +17,8 @@ def merge(ids, pair, idx):
     new_ids = []
     i = 0
     n = len(ids)
-    while i < n-1:
-        if pair[0] == ids[i] and pair[1] == ids[i+1]:
+    while i < n:
+        if i < n-1 and pair[0] == ids[i] and pair[1] == ids[i+1]:
             new_ids.append(idx)
             i += 2   #Escape the pair in ids
         else:
